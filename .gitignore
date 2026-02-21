@@ -2,6 +2,3 @@
 env.py
 __pycache__/
 
-[submodule "django-project"]
-    path = django-project
-    url = https://github.com/Kassem79/django-project.git
