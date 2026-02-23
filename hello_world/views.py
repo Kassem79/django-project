@@ -1,6 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
-# Create your views here.
+
 def home_page_view(request):
-    return HttpResponse("<h1>Hello, World!</h1>")
+    """Render the homepage using a template."""
+    context = {
+        'title': 'Home',
+    }
+    return render(request, 'hello_world/index.html', context)

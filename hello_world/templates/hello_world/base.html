@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{{ title|default:"My Site" }}{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'hello_world/css/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="site-header">
+            <h1>{% block header %}My Site{% endblock %}</h1>
+        </div>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; {{ year|default:"2026" }}</p>
+    </footer>
+</body>
+</html>
