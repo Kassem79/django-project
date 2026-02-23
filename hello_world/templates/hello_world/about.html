@@ -1,0 +1,11 @@
+{% extends "hello_world/base.html" %}
+
+{% block title %}About — {{ title|default:"My Site" }}{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h2>About This Project</h2>
+  <p>This is a simple Django app demonstrating templates and static files.</p>
+  <p>Created as part of a quick setup to add HTML and CSS.</p>
+</div>
+{% endblock %}

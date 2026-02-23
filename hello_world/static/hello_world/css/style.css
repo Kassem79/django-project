@@ -19,3 +19,17 @@ header .site-header {
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 h2 { color: #0b7285; }
+
+/* Navigation styles */
+.site-nav {
+  margin-top: 8px;
+}
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 16px;
+  font-weight: 600;
+}
+.site-nav a:hover {
+  text-decoration: underline;
+}

@@ -7,3 +7,11 @@ def home_page_view(request):
         'title': 'Home',
     }
     return render(request, 'hello_world/index.html', context)
+
+
+def about_page_view(request):
+    """Render a simple About page."""
+    context = {
+        'title': 'About',
+    }
+    return render(request, 'hello_world/about.html', context)
