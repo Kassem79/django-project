@@ -1,14 +1,17 @@
-{% extends "hello_world/base.html" %}
 
-{% block title %}About — {{ title|default:"My Site" }}{% endblock %}
-
-{% block content %}
- 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HELLO WORLD</title>
+   
+    <link rel="stylesheet" href="static/hello_world/assets/css/styles.css">
+</head>
 <div class="container">
   <h2>About This Project</h2>
   <p>This is a simple Django app demonstrating templates and static files.</p>
   <p>Created as part of a quick setup to add HTML and CSS.</p>
 </div>
-{% endblock %}
+
 
  
